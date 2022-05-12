@@ -1,0 +1,19 @@
+class User_information():
+    def __init__(self,name,account_number,age,gender,education,account_level,income):
+        self.name=name#名字 
+        self.account_number=account_number#账号
+        self.age=age#年龄
+        self.gender=gender#性别
+        self.education=education#学历
+        self.account_level=account_level#账号等级
+        self.income=income#收入
+User_name=['a','b','c']
+a=User_information('a',1,18,'man','Bachelor degree',5,12)
+b=User_information('b',2,38,'woman','Bachelor degree',6,22)
+c=User_information('c',3,10,'man','Primary school degree',2,0)
+#一个输出用户平均年龄的程序：
+average_age=0
+for i in User_name:
+    average_age+=eval(i).age
+average_age=average_age/len(User_name)
+print(average_age)
